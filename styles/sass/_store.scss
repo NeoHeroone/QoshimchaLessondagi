@@ -1,0 +1,55 @@
+@import "colors";
+@import "responsive";
+
+.store{
+    background: $card-bg-color;
+
+    .container-store{
+        padding: 100px 120px;
+
+        .section-title{
+            color: #DB343B;
+        }
+
+        .boxes{
+            margin-top: 40px;
+            padding-left: 60px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+            .box{
+                
+                img{
+                    width: 378px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                
+                .box-in{
+                    background: $lighter-color;
+                    margin-top: -5px;
+                    padding: 26px 30px;
+                    width: 378px;
+                    height: 186px;
+                    border-bottom-left-radius: 16px;
+                    border-bottom-right-radius: 16px;
+
+                    h2{
+                        font-family: "Source Serif 4", sans-serif;
+                        margin-bottom: 6px;
+                        color: $main-color;
+                        font-weight: 400;
+                        font-size: 24px;
+                    }
+
+                    p{
+                        color: $main-color;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@import "colors";
+@import "responsive";
+
+footer{
+    background: $comments-color;
+
+    .container-footer{
+        padding: 99px 136px;
+
+        .footer-logo{
+            justify-content: center;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .footer-boxes{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-top: 40px;
+            gap: 16px;
+
+            .footer-box{
+                height: 410px;
+
+                .footer-box-title{
+                    text-transform: uppercase;
+                    color: #B87D58;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    letter-spacing: 3px;
+                }
+
+                .footer-list{
+                    // margin-top: 10px;
+                    margin-bottom: 19px;
+
+                    li{
+
+                        a{
+                            color: $lighter-color;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 22.4px;
+                            margin-top: 10px;
+
+                            &:hover{
+                                color: $main-color;
+                            }
+
+                            &:active{
+                                color: $active-color;
+                            }
+                        }
+                    }
+                }
+
+                p{
+                    color: $lighter-color;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 22.4px;
+                    width: 404px;
+                    margin-bottom: 8px;
+                }
+
+                form{
+                    background: $lighter-color;
+                    border-radius: 8px;
+                    
+                    input{
+                        padding: 14px 20px;
+                        border-radius: 8px;
+                        border: none;
+                        margin-right: 100px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 22.4px;
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    button{
+                        background: $comments-color;
+                        color: #FFFFFF;
+                        border: none;
+                        padding: 7px 10px;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 22.4px;
+
+                        &:hover{
+                            background: $hover-color;
+                        }
+
+                        &:active{
+                            background: $active-color;
+                            color: $dark-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-last-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 27px;
+            color: $lighter-color;
+
+            p{
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22.4px;
+                text-align: left;
+
+                span{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

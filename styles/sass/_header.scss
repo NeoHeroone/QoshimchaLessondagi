@@ -1,0 +1,76 @@
+@import "colors";
+@import "responsive";
+@import "nav";
+
+header {
+
+    .header-content {
+        background: #F4F3F0;
+        
+        .container {
+            padding: 100px 136px;
+
+            .container-header{
+                position: relative;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                // gap: 64px;
+
+                .header-descriptions{
+                    width: 552px;
+
+                    h1{
+                        width: 477px;
+                        font-size: 48px;
+                        color: $main-color;
+                        font-weight: 400;
+                        font-family: "Source Serif 4", sans-serif;
+                    }
+
+                    p{
+                        margin-top: 11px;
+                        margin-bottom: 17px;
+                        color: $comments-color;
+                        width: 534px;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+
+                    button{
+                        background: $main-color;
+                        color: #FFFFFF;
+                        border: none;
+                        padding: 12px 20px;
+                        border-radius: 6px;
+                        &:hover{
+                            background: $hover-color;
+                        }
+                        &:active{
+                            background: $active-color;
+                            color: $dark-color;
+                        }
+                    }
+                }
+
+                img{
+                    width: 552px;
+                    height: 773px;
+                }
+            }
+            .first{
+                position: absolute;
+                top: -10px;
+                right: 0;
+                margin-top: -100px;
+                width: 564px;
+                height: 494px;
+                z-index: 1;
+                background: radial-gradient(50% 50% at 50% 50%, 
+                                        rgba(58, 95, 86, 0.55) 0%, 
+                                        rgba(58, 95, 86, 0) 100%);
+            }
+        }
+    }
+}

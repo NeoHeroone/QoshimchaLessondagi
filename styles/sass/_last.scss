@@ -1,0 +1,45 @@
+@import "colors";
+@import "responsive";
+
+.last {
+
+    .container-last{
+        padding: 100px 320px;
+
+        .last-box{
+            background: $card-bg-color;
+            border-radius: 16px;
+            padding: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+                color: $comments-color;
+                font-size: 28px;
+                width: 313px;
+                font-weight: 400;
+                line-height: 33px;
+            }
+            
+            a{
+                padding: 15px 25px;
+                background: $main-color;
+                color: $lighter-color;
+                border-radius: 6px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 400;
+
+                &:hover{
+                    background: $hover-color;
+                }
+
+                &:active{
+                    background: $active-color;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
